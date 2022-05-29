@@ -1,0 +1,276 @@
+: 1652917258:0;vim .zshrc
+: 1652917315:0;ls .oh-my-zsh/themes
+: 1652917328:0;vim .zshrc
+: 1652917392:0;source .zshrc
+: 1652917407:0;vim .zshrc
+: 1652917421:0;source .zshrc
+: 1652917436:0;vim .zshrc
+: 1652917485:0;source .zshrc
+: 1652917490:0;ls
+: 1652917531:0;source .zshrc
+: 1652917533:0;vim .zshrc
+: 1652917546:0;source .zshrc
+: 1652917553:0;ls
+: 1652917605:0;vim .zshrc
+: 1652917751:0;pacman -S zsh-autosuggestions suggestion
+: 1652917768:0;source .zshrc
+: 1652917786:0;sudo pacman -S zsh-autosuggestions suggestion
+: 1652917800:0;sudo pacman -S zsh-autosuggestions
+: 1652917812:0;vim .zshrc
+: 1652917877:0;source .zshrc
+: 1652917890:0;vim .zshrc
+: 1652917942:0;source .zshrc
+: 1652917960:0;ls .oh-my-zsh/plugins
+: 1652918186:0;sudo pacman -Rns zsh-autosuggestions
+: 1652918223:0;git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+: 1652918239:0;source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+: 1652918247:0;ls .oh-my-zsh/plugins
+: 1652918307:0;ls
+: 1652918329:0;ls .zsh
+: 1652918339:0;ls -a .zsh
+: 1652918347:0;git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+: 1652918351:0;ls -a .zsh
+: 1652918360:0;ls .oh-my-zsh/plugins
+: 1652918382:0;source .zshrc
+: 1652918384:0;ls .oh-my-zsh/plugins
+: 1652918406:0;vim .zshrc
+: 1652918551:0;ls .oh-my-zsh/plugins
+: 1652918575:0;vim .zshrc
+: 1652919193:0;acpi
+: 1652941477:0;.oh-my-zsh
+: 1652941480:0;ls
+: 1652941504:0;plugins
+: 1652941520:0;git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+: 1652941525:0;ls
+: 1652941735:0;vim .zshrc
+: 1652941771:0;~
+: 1652941773:0;vim .zshrc
+: 1652941827:0;source .zshrc
+: 1652986541:0;acpi
+: 1652996431:0;sudo pacman -S wofi
+: 1652997330:0;acpi
+: 1653078890:0;nmtui
+: 1653079719:0;setfont ter-u22b
+: 1653080359:0;acpi
+: 1653083880:0;sudo vim '/usr/share/icons/default/index.theme'
+: 1653084051:0;vim ~/.config/gtk-3.0/settings.ini
+: 1653084215:0;acpi
+: 1653119980:0;playerctl
+: 1653120032:0;sudo pacman -S playerctl
+: 1653120047:0;playerctl
+: 1653120052:0;playerctl pause
+: 1653120057:0;playerctl play
+: 1653142722:0;acpi
+: 1653143031:0;sudo pacman -S waybar
+: 1653157666:0;git clone https://github.com/rbnis/dotfiles/tree/master/.config
+: 1653157697:0;Downloads
+: 1653157700:0;git clone https://github.com/rbnis/dotfiles/tree/master/.config
+: 1653157784:0;git clone https://github.com/rbnis/dotfiles.git
+: 1653157806:0;dotfiles
+: 1653157807:0;ls
+: 1653157818:0;cd 
+: 1653157831:0;ls
+: 1653157857:0;.config
+: 1653157863:0;ls
+: 1653157894:0;cp waybar ~/.config/
+: 1653157902:0;cp -r waybar ~/.config/
+: 1653210805:0;paru -S otf-font-awesome
+: 1653210838:0;sudo pacman -S waybar
+: 1653212340:0;.config
+: 1653212347:0;waybar
+: 1653212378:0;cd waybar
+: 1653212385:0;ls
+: 1653212389:0;cd waybar
+: 1653212392:0;ls
+: 1653212410:0;vim config
+: 1653214097:0;pacman -Ss gnome-text-editor
+: 1653214105:0;pacman -Ss gnome text editor
+: 1653214118:0;paru -Ss gnome text editor
+: 1653214174:0;paru -S gnome text editor
+: 1653214218:0;paru -S gnome-text-editor
+: 1653214292:0;paru -Ss gnome console
+: 1653214306:0;paru -S gnome-console
+: 1653214471:0;sudo pacman -Rns terminator
+: 1653222679:0;nmtui
+: 1653222878:0;amixer sset Master 5%+
+: 1653223100:0;amixer sset Master
+: 1653223106:0;amixer
+: 1653223267:0;pacman -S gnuplot
+: 1653223270:0;sudo pacman -S gnuplot
+: 1653223454:0;pacman -S gnuplot
+: 1653223458:0;amixer
+: 1653224301:0;pulseaudio 
+: 1653224327:0;pipewire-pulse
+: 1653226937:0;paru -Syu
+: 1653227641:0;mkdir .config/wofi
+: 1653227647:0;.config/wofi
+: 1653227662:0;vim style.css
+: 1653227702:0;less style.css
+: 1653227828:0;vim style.css
+: 1653232864:0;waybar
+: 1653232876:0;cd waybar
+: 1653232880:0;l
+: 1653232883:0;ls
+: 1653232893:0;waybar.sh
+: 1653232904:0;./waybar.sh
+: 1653233823:0;blueman
+: 1653233841:0;bluetooth
+: 1653233858:0;bluetoothctl
+: 1653234052:0;bluemoon
+: 1653234069:0;sudo pacman -S blueman
+: 1653234097:0;blueman
+: 1653234283:0;ldd vscode | grep wayland
+: 1653234445:0;ldd /opt/vscodium-bin/bin/codium | grep wayland
+: 1653234541:0;sudo pacman -Rns blueman
+: 1653234561:0;sudo pacman -Rns blueberry
+: 1653234572:0;sudo pacman -S blueberry
+: 1653235182:0;pavucontrol
+: 1653235253:0;sudo pacman -S pavucontrol
+: 1653235488:0;blueberry
+: 1653236371:0;bluetoothctl
+: 1653236587:0;bluetoothctl power off
+: 1653236633:0;bluetoothctl power on
+: 1653236691:0;bluetoothctl power off
+: 1653236746:0;bluetoothctl
+: 1653236989:0;blueberry
+: 1653237479:0;rfkill block bluetooth
+: 1653237486:0;rfkill unblock bluetooth
+: 1653237500:0;rfkill status bluetooth
+: 1653237507:0;rfkill --help
+: 1653237523:0;rfkill toggle bluetooth
+: 1653238603:0;man sway(5)
+: 1653238615:0;man sway
+: 1653238744:0;XCURSOR_THEME = capitaine-cursors
+: 1653238752:0;set XCURSOR_THEME = capitaine-cursors
+: 1653238791:0;set XCURSOR_THEME = adwaita
+: 1653238842:0;set XCURSOR_THEME = capitaine-cursors
+: 1653239018:0;/etc/sway/config.d/
+: 1653239020:0;ls
+: 1653239049:0;vim config
+: 1653239094:0;~
+: 1653239102:0;man 5 sway
+: 1653239303:0;man 5 sway | grep inhibit
+: 1653239333:0;man 5 sway | grep inhibit_idle
+: 1653243403:0;/etc/sway/config
+: 1653243409:0;less /etc/sway/config
+: 1653243612:0;.config/sway
+: 1653243626:0;mv config new_config
+: 1653243628:0;ls
+: 1653243742:0;cp /etc/sway/config ./config
+: 1653243743:0;ls
+: 1653246960:0;acpi
+: 1653247113:0;swaylock
+: 1653247187:0;mv config config_default
+: 1653247203:0;mv new_config config
+: 1653247659:0;sudo pacman -Syu
+: 1653249131:0;sudo pacman -Ss imvim
+: 1653249148:0;paru -Ss imvim
+: 1653249172:0;sudo pacman -Ss invim
+: 1653249177:0;paru -Ss invim
+: 1653249237:0;paru -Ss vimiv
+: 1653249248:0;sudo pacman -S vimiv
+: 1653249260:0;vimiv
+: 1653249267:0;vimiv &
+: 1653249359:0;sudo pacman -Rns vimiv
+: 1653249371:0;sudo pacman -S eog
+: 1653249459:0;sudo pacman -S totem
+: 1653249486:0;sudo pacman -S vlc
+: 1653249579:0;sudo pacman -S mpv
+: 1653249593:0;sudo pacman -S totem
+: 1653250704:0;ffmpeg '/home/bilottoz/Downloads/PXL_20210402_170914386.mp4' 
+: 1653250741:0;ffmpeg
+: 1653250917:0;sudo pacman -S gst-plugins
+: 1653250929:0;sudo pacman -Ss gst-plugins
+: 1653250961:0;sudo pacman -S gst-plugins*
+: 1653250986:0;sudo pacman -S gst-plugins-bad
+: 1653251002:0;sudo pacman -S gst-plugins-bad-libs
+: 1653251013:0;sudo pacman -S gst-plugins-base
+: 1653251031:0;sudo pacman -S gst-plugins-good
+: 1653251118:0;sudo pacman -Ss gstreamer
+: 1653251212:0;sudo pacman -S glide
+: 1653251954:0;sudo pacman -S gst-plugins-ugly
+: 1653251978:0;totem '/home/bilottoz/Downloads/PXL_20210402_170914386.mp4' 
+: 1653252066:0;light -G
+: 1653252099:0;light -G | $WOBSOCK
+: 1653252112:0;$WOBSOCK
+: 1653252119:0;echo $WOBSOCK
+: 1653316149:0;/etc/NetworkManager
+: 1653316150:0;ls
+: 1653316160:0;system-connections
+: 1653316168:0;./system-connections
+: 1653316177:0;cd ./system-connections
+: 1653316192:0;sudo cd ./system-connections
+: 1653316246:0;ls system-connections/
+: 1653316260:0;sudo ls system-connections/\
+
+: 1653316349:0;touch GSSI.nmconnection
+: 1653316375:0;sudo touch GSSI.nmconnection -D ./system-connections
+: 1653316421:0;sudo touch ./system-connections/GSSI.nmconnection
+: 1653316448:0;touch -h
+: 1653316460:0;man touch
+: 1653316512:0;sudo touch ./system-connections/GSSI.nmconnection
+: 1653316562:0;sudo vim ./system-connections/GSSI.nmconnection
+: 1653316651:0;/etc/NetworkManager
+: 1653316674:0;vim system-connections/eduroam.nmconnection
+: 1653316684:0;sudo ls
+: 1653316706:0;sudo ls system-connections/\
+
+: 1653316721:0;sudo vim ./system-connections/eduroam.nmconnection
+: 1653317059:0;ip link show
+: 1653317212:0;sudo vim ./system-connections/GSSI.nmconnection
+: 1653317460:0;sudo touch ./system-connections/GSSI.nmconnection
+: 1653317584:0;sudo ls -l
+: 1653317607:0;su
+: 1653317650:0;sudo ls -l
+: 1653317660:0;sudo ls ./system-connections -l
+: 1653317702:0;su
+: 1653317740:0;sudo ls ./system-connections -l
+: 1653317888:0;systemctl status swayidle.service
+: 1653340117:0;Downloads
+: 1653340129:0;chmod +x mylock
+: 1653340133:0;mylock
+: 1653340139:0;./mylock
+: 1653376848:0;./Download/mylock 
+: 1653376858:0;Downloads
+: 1653376859:0;ls
+: 1653376870:0;./mylock
+: 1653376875:0;./mylock usage
+: 1653376884:0;./mylock --help
+: 1653405576:0;swayidle -w \\
+    timeout 10 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \\
+    timeout 30 'swaylock -f -c 000000' \\
+    before-sleep 'playerctl pause' \\
+    before-sleep 'swaylock -f -c 000000' \\
+    for_window [class=".*"] inhibit_idle fullscreen \\
+    for_window [app_id=".*"] inhibit_idle fullscreen
+: 1653405595:0;exec swayidle -w \\
+    timeout 10 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \\
+    timeout 30 'swaylock -f -c 000000' \\
+    before-sleep 'playerctl pause' \\
+    before-sleep 'swaylock -f -c 000000'
+: 1653405622:0;swayidle -w \\
+    timeout 10 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \\
+    timeout 30 'swaylock -f -c 000000' \\
+    before-sleep 'playerctl pause' \\
+    before-sleep 'swaylock -f -c 000000'
+: 1653406167:0;sudo paru -Syu
+: 1653406315:0;echo $XCURSOR_THEME
+: 1653406964:0;echo $WOBSOCK
+: 1653406995:0;light -S "$(light -G | awk '{ print int(($1 + .72) * 1.4) }')"
+: 1653407197:0;waybar
+: 1653408693:0;export 
+: 1653408800:0;sudo pacman -S waybar
+: 1653807306:0;acpi
+: 1653807320:0;pacman -Qe
+: 1653807329:0;pacman -Qet
+: 1653807346:0;paru -Qet
+: 1653807438:0;timeshift
+: 1653807446:0;timeshift-gtk
+: 1653807451:0;sudo timeshift-gtk
+: 1653807589:0;sudo timeshift
+: 1653807606:0;timeshift --list
+: 1653807613:0;sudo timeshift --list
+: 1653807680:0;paru -Qet > pkg_list.txt
+: 1653807693:0;less pkg_list.txt
+: 1653807733:0;sudo timeshift --check
+: 1653807762:0;sudo timeshift --restore
