@@ -1,0 +1,112 @@
+# set german keyboard
+loadkeys de
+# set cute font
+setfont ter-u24n
+
+# show disks
+lsblk
+# partition disk
+gdisk /dev/nvme0n1
+	n
+	.
+	+1000M
+	ef00
+	n
+	.
+	.
+	.
+	w
+# make filesystem for UEFI partition
+mkfs.fat -F32 /dev/nvme0n1p1
+# encrypt data partition
+cryptsetup --cipher aes-xts-plain64 --hash sha512 --use-random --verify-passphrase luksFormat /dev/nvme0n1p2
+	YES
+	<password>
+	<password>
+# open encrypted data partition
+cryptsetup luksOpen /dev/nvme0n1p2
+# make filesystem for data partition
+mkfs.btrfs /dev/mapper/root
+
+# create 2 btrfs sub-volumes for root and home from the data partition
+mount /dev/mapper/root /mnt
+cd /mnt
+btrfs subvolume create @
+btrfs subvolume create @home
+cd
+# un-mount root and mount the 2 data sub-volumes
+umount /mnt
+mount -o noatime,space_cache=v2,compress=zstd,ssd,discard=async,subvol=@ /dev/mapper/root /mnt
+mkdir /mnt/{boot,home}
+mount -o noatime,space_cache=v2,compress=zstd,ssd,discard=async,subvol=@home /dev/mapper/root /mnt/home
+# mount UEFI boot partition
+mount /dev/nvme0n1p1 /mnt/boot
+
+# install base system
+pacstrap /mnt base linux linux-firmware git vim intel-ucode
+	[takes time...]
+	
+# generate filsystem table for the mount points
+genfstab -U /mnt >> /mnt/etc/fstab
+
+# move into the installation
+arch-chroot /mnt
+
+# modify initcpio file to account for btrfs and encryption
+vim /etc/mkinitcpio.conf
+	<insert "btrfs i915" in MODULES>
+	<add "encrypt" in HOOKS before "filesystems">
+	:x
+mkinitcpio -p linux
+
+# install base packages for linux from an online script from eflinux
+git clone https://gitlab.com/eflinux/arch-basic
+cd arch-basic
+vim base-uefi.sh
+	change timezone to "Europe/Rome" and keymap to "de-latin1"
+	change root password
+	remove grub
+	change username and password for the user "bilottoz"
+chmod +x base-uefi.sh
+cd /
+./arch-basic/base-uefi.sh
+
+# install bootloader...
+bootctl --path=/boot install
+#...and modify something for encryption
+vim /boot/loader/loader.conf
+	timeout 1
+	default arch
+# now create the arch entry
+vim /boot/loader/entries/arch.conf
+	title Arch Linux
+	linux /vmlinuz-linux
+	initrd /initramfs-linux.img
+	options cryptdevice=UUID=<data partition>:root root=UUID=<root subvolume> rootflags=subvol=@ rw
+# append UUIDs of root and home through command line
+blkid /dev/nvme0n1p2 >> /boot/loader/entries/arch.conf
+blkid /dev/mapper/root >> /boot/loader/entries/arch.conf
+# now change the /boot/loader/entries/arch.conf file to get the above version
+# create a fallback configuration
+cp /boot/loader/entries/arch.conf /boot/loader/entries/arch-fallback.conf
+vim /boot/loader/entries/arch-fallback.conf
+	change "linux.img" with "linux-fallback.img"
+
+# exit chroot and reboot
+exit
+umount -R /mnt
+reboot
+
+# insert encryption key (for some reason the keyboard is set to us at this moment...)
+# login with user (bilottoz) and password (correct keyboard now)
+# check internet connection
+ip a
+sudo pacman -Sy
+# install paru for AUR
+git clone https://aur.archlinux.org/paru-bin
+cd paru-bin/
+makepkg -si
+
+# connect to eduroam
+wget https://cat.eduroam.org/user/API.php?action=downloadInstaller&api_version=2&lang=en&device=linux&profile=8212
+# modify name of 
