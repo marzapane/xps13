@@ -24,7 +24,7 @@ cryptsetup --cipher aes-xts-plain64 --hash sha512 --use-random --verify-passphra
 	<password>
 	<password>
 # open encrypted data partition
-cryptsetup luksOpen /dev/nvme0n1p2
+cryptsetup luksOpen /dev/nvme0n1p2 root
 # make filesystem for data partition
 mkfs.btrfs /dev/mapper/root
 
